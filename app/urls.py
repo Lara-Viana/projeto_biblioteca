@@ -19,4 +19,8 @@ urlpatterns = [
     name='leitor'),
     path('genero/', GenerosView.as_view(),
     name='genero'),
+    path('UF/', UFsView.as_view(),
+    name='uf'),
+    path('usuario/', UsuariosView.as_view(),
+    name='usuario'),
 ]
