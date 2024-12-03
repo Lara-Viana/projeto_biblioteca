@@ -15,8 +15,15 @@ urlpatterns = [
     path('autor/', AutoresView.as_view(), name='autor'),
     path('editor/', EditorasView.as_view(),
     name='editora'),
+<<<<<<< HEAD
     path('genero/', GenerosView.as_view(),
     name='genero'),
     path('usuario/', UsuariosView.as_view(),
     name='usuario'),
+=======
+    path('leitor/', LeitoresView.as_view(),
+    name='leitor'),
+    path('genero/', GenerosView.as_view(),
+    name='genero'),
+>>>>>>> a1dde5cf14dbdebde22c51279d35322aab0d0d46
 ]
