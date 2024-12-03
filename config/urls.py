@@ -35,6 +35,4 @@ urlpatterns = [
     name='leitor'),
     path('genero/', GenerosView.as_view(),
     name='genero'),
-    path('leitores/', LeitoresView.as_view(),
-    name='leitor'),
 ]
