@@ -52,13 +52,30 @@ initial-scale=1.0"
             <a class="nav-link text-dark" href="/genero/">Genero</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link text-dark" href="/leitor/">leitor</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link text-dark" href="/admin/">Administração</a>
           </li>
         </ul>
       </div>
     </nav>
     <div class="container mt-5">
-      <h2 class="mb-4">Gêneros Disponíveis</h2>
+        <h2 class="mb-4">Gêneros Disponíveis</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Gênero</th>
+          </tr>
+        </thead>
+        <tbody>
+           {% for generos in generos %}
+           <tr>
+            <td>{{ generos.nome }}</td>
+           </tr>
+           {% endfor %}
+         </tbody>
+       </table>
     </div>
     <!-- Incluindo jQuery e Bootstrap JS -->
 

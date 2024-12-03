@@ -7,7 +7,7 @@
       content="width=device-width,
 initial-scale=1.0"
     />
-    <title>Biblioteca</title>
+    <title>Página Inicial</title>
     <!-- Incluindo Bootstrap CSS -->
 
     <link
@@ -52,7 +52,7 @@ initial-scale=1.0"
             <a class="nav-link text-dark" href="/genero/">Genero</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="/leitor/">leitor</a>
+            <a class="nav-link text-dark" href="/usuario/">Usuario</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-dark" href="/admin/">Administração</a>
@@ -61,22 +61,28 @@ initial-scale=1.0"
       </div>
     </nav>
     <div class="container mt-5">
-      <h2 class="mb-4">Tabela de Editoras</h2>
+      <h2 class="mb-4">Tabela de Usuarios</h2>
       <table class="table">
         <thead>
           <tr>
             <th scope="col">Nome</th>
-            <th scope="col">Site</th>
+            <th scope="col">CPF</th>
+            <th scope="col">Data de Nascimeno</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telefone</th>
             <th scope="col">Cidade</th>
           </tr>
         </thead>
         <tbody>
-          {% for editoras in editoras %}
+          {% for leitores in leitores %}
           <tr>
-            <td>{{ editoras.nome }}</td>
-            <td>{{ editoras.site }}</td>
+            <td>{{ leitores.nome }}</td>
+            <td>{{ leitores.cpf }}</td>
 
-            <td>{{ editoras.cidade }}</td>
+            <td>{{ leitores.data_nasc }}</td>
+            <td>{{ leitores.email }}</td>
+            <td>{{ leitores.telefone }}</td>
+            <td>{{ leitores.cidade }}</td>
           </tr>
           {% endfor %}
         </tbody>
