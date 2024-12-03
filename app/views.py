@@ -46,6 +46,15 @@ class LeitoresView(View):
         return render(request, 'leitor.html',
 {'leitores': leitores})
     
+<<<<<<< HEAD
+class UsuariosView(View):
+    def get(self, request, *args, **kwargs):
+        usuarios = Usuario.objects.all()
+        return render(request, 'leitor.html',
+{'usuarios': usuarios})
+    
+=======
+>>>>>>> a1dde5cf14dbdebde22c51279d35322aab0d0d46
 class GenerosView(View):
     def get(self, request, *args, **kwargs):
         generos = Genero.objects.all()

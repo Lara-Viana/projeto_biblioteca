@@ -52,6 +52,12 @@ initial-scale=1.0"
             <a class="nav-link text-dark" href="/genero/">Genero</a>
           </li>
           <li class="nav-item">
+<<<<<<< HEAD
+            <a class="nav-link text-dark" href="/leitor/">leitor</a>
+          </li>
+          <li class="nav-item">
+=======
+>>>>>>> a1dde5cf14dbdebde22c51279d35322aab0d0d46
             <a class="nav-link text-dark" href="/admin/">Administração</a>
           </li>
         </ul>
@@ -59,6 +65,36 @@ initial-scale=1.0"
     </nav>
     <div class="container mt-5">
       <h2 class="mb-4">Reservas</h2>
+<<<<<<< HEAD
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Editora</th>
+            <th scope="col">Gênero</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Data Publicação</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for livros in livros %}
+          <tr>
+            <td>{{ livros.nome }}</td>
+            <td>{{ livros.autor }}</td>
+
+            <td>{{ livros.editora }}</td>
+            <td>{{ livros.genero }}</td>
+            <td>{{ livros.preco }}</td>
+            <td>{{ livros.data_plub }}</td>
+            <td>{{ livros.status }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+=======
+>>>>>>> a1dde5cf14dbdebde22c51279d35322aab0d0d46
     </div>
     <!-- Incluindo jQuery e Bootstrap JS -->
 
